@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEB7767E2501E7340042E2E2 /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7767D2501E7340042E2E2 /* MoodsTableViewController.swift */; };
+		CEB776802501ED670042E2E2 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7767F2501ED670042E2E2 /* TableViewDataSource.swift */; };
+		CEB776862501FFBE0042E2E2 /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB776852501FFBE0042E2E2 /* MoodTableViewCell.swift */; };
 		CEC8326124FB946900ECF324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8326024FB946900ECF324 /* AppDelegate.swift */; };
 		CEC8326324FB946900ECF324 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8326224FB946900ECF324 /* SceneDelegate.swift */; };
 		CEC8326524FB946900ECF324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8326424FB946900ECF324 /* ViewController.swift */; };
 		CEC8326824FB946900ECF324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC8326624FB946900ECF324 /* Main.storyboard */; };
 		CEC8326A24FB946D00ECF324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC8326924FB946D00ECF324 /* Assets.xcassets */; };
 		CEC8326D24FB946D00ECF324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC8326B24FB946D00ECF324 /* LaunchScreen.storyboard */; };
+		CEC8327924FBA24B00ECF324 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEC8327724FBA24B00ECF324 /* Moody.xcdatamodeld */; };
+		CEC8327B24FCECBD00ECF324 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8327A24FCECBD00ECF324 /* Mood.swift */; };
+		CEC8327D24FCEEFA00ECF324 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8327C24FCEEFA00ECF324 /* Managed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEB7767D2501E7340042E2E2 /* MoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
+		CEB7767F2501ED670042E2E2 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		CEB776852501FFBE0042E2E2 /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
 		CEC8325D24FB946900ECF324 /* CoreData0830.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData0830.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8326024FB946900ECF324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC8326224FB946900ECF324 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		CEC8326924FB946D00ECF324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC8326C24FB946D00ECF324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC8326E24FB946D00ECF324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC8327824FBA24B00ECF324 /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
+		CEC8327A24FCECBD00ECF324 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		CEC8327C24FCEEFA00ECF324 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +49,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEB776812501EE620042E2E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8327A24FCECBD00ECF324 /* Mood.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB776822501EE6D0042E2E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB776852501FFBE0042E2E2 /* MoodTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB776832501EE730042E2E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8326424FB946900ECF324 /* ViewController.swift */,
+				CEB7767D2501E7340042E2E2 /* MoodsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEB776842501EE790042E2E2 /* Core Data Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8327C24FCEEFA00ECF324 /* Managed.swift */,
+				CEB7767F2501ED670042E2E2 /* TableViewDataSource.swift */,
+			);
+			path = "Core Data Helper";
+			sourceTree = "<group>";
+		};
 		CEC8325424FB946900ECF324 = {
 			isa = PBXGroup;
 			children = (
+				CEC8327724FBA24B00ECF324 /* Moody.xcdatamodeld */,
 				CEC8325F24FB946900ECF324 /* CoreData0830 */,
 				CEC8325E24FB946900ECF324 /* Products */,
 			);
@@ -56,9 +103,12 @@
 		CEC8325F24FB946900ECF324 /* CoreData0830 */ = {
 			isa = PBXGroup;
 			children = (
+				CEB776812501EE620042E2E2 /* Model */,
+				CEB776822501EE6D0042E2E2 /* View */,
+				CEB776832501EE730042E2E2 /* Controller */,
+				CEB776842501EE790042E2E2 /* Core Data Helper */,
 				CEC8326024FB946900ECF324 /* AppDelegate.swift */,
 				CEC8326224FB946900ECF324 /* SceneDelegate.swift */,
-				CEC8326424FB946900ECF324 /* ViewController.swift */,
 				CEC8326624FB946900ECF324 /* Main.storyboard */,
 				CEC8326924FB946D00ECF324 /* Assets.xcassets */,
 				CEC8326B24FB946D00ECF324 /* LaunchScreen.storyboard */,
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC8327B24FCECBD00ECF324 /* Mood.swift in Sources */,
+				CEC8327D24FCEEFA00ECF324 /* Managed.swift in Sources */,
+				CEB776802501ED670042E2E2 /* TableViewDataSource.swift in Sources */,
+				CEB776862501FFBE0042E2E2 /* MoodTableViewCell.swift in Sources */,
 				CEC8326524FB946900ECF324 /* ViewController.swift in Sources */,
+				CEC8327924FBA24B00ECF324 /* Moody.xcdatamodeld in Sources */,
 				CEC8326124FB946900ECF324 /* AppDelegate.swift in Sources */,
+				CEB7767E2501E7340042E2E2 /* MoodsTableViewController.swift in Sources */,
 				CEC8326324FB946900ECF324 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEC8327724FBA24B00ECF324 /* Moody.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEC8327824FBA24B00ECF324 /* Moody.xcdatamodel */,
+			);
+			currentVersion = CEC8327824FBA24B00ECF324 /* Moody.xcdatamodel */;
+			path = Moody.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEC8325524FB946900ECF324 /* Project object */;
 }
